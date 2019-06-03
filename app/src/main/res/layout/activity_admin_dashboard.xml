@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".AdminDashboard"
+    android:orientation="vertical"
+    >
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/txtDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Admin Dashboard !!"
+                android:textColor="#FFFF"
+                android:textSize="40sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:fontFamily="cursive"
+                />
+
+         <GridLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:orientation="horizontal"
+         >
+        <Button
+            android:id="@+id/btnaddItem"
+            android:text="Add an Item "
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:textSize="20dp"
+            android:fontFamily="serif-monospace"
+            />
+
+        <Button
+            android:id="@+id/btnupdateitem"
+            android:text="Update an Item"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:textSize="20dp"
+            android:fontFamily="serif-monospace"
+            />
+
+        <Button
+            android:id="@+id/btndeleteitem"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:text="Delete an Item"
+            android:textSize="20dp"
+            android:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/btnorderlist"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:text="Order List"
+            android:textSize="20dp"
+            android:fontFamily="serif-monospace"/>
+
+             <Button
+                 android:id="@+id/btnviewitem"
+                 android:layout_width="200dp"
+                 android:layout_height="150dp"
+                 android:text="View an Item"
+                 android:textSize="20dp"
+                 android:fontFamily="serif-monospace"/>
+    </GridLayout>
+
+    </LinearLayout>
+
+
+
+
+
