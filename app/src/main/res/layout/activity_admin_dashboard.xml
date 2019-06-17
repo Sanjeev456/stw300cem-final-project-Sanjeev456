@@ -54,22 +54,6 @@
             android:fontFamily="serif-monospace"
             />
 
-        <Button
-            android:id="@+id/btnupdateitem"
-            android:text="Update an Item"
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:textSize="20dp"
-            android:fontFamily="serif-monospace"
-            />
-
-        <Button
-            android:id="@+id/btndeleteitem"
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:text="Delete an Item"
-            android:textSize="20dp"
-            android:fontFamily="serif-monospace"/>
 
         <Button
             android:id="@+id/btnorderlist"
@@ -79,14 +63,10 @@
             android:textSize="20dp"
             android:fontFamily="serif-monospace"/>
 
-             <Button
-                 android:id="@+id/btnviewitem"
-                 android:layout_width="200dp"
-                 android:layout_height="150dp"
-                 android:text="View an Item"
-                 android:textSize="20dp"
-                 android:fontFamily="serif-monospace"/>
+
     </GridLayout>
+
+
 
     </LinearLayout>
 
