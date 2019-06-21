@@ -1,52 +1,16 @@
 package model;
 
 public class Users {
-    private String userFname, userLname, username, password;
+    private String username, password, contactnumber, address;
 
     private boolean success;
     private String status;
 
-    public String getUserLname() {
-        return userLname;
-    }
-
-    public boolean isSuccess() {
-        return success;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Users(String userFname, String userLname, String username, String password) {
-        this.userFname = userFname;
-        this.userLname = userLname;
+    public Users(String username, String password, String contactnumber, String address) {
         this.username = username;
         this.password = password;
-    }
-
-    public String getUserFname() {
-        return userFname;
-    }
-
-    public void setUserFname(String userFname) {
-        this.userFname = userFname;
-    }
-
-    public String getUsernLname() {
-        return userLname;
-    }
-
-    public void setUserLname(String userLname) {
-        this.userLname = userLname;
+        this.contactnumber = contactnumber;
+        this.address = address;
     }
 
     public String getUsername() {
@@ -63,5 +27,37 @@ public class Users {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getContactnumber() {
+        return contactnumber;
+    }
+
+    public void setContactnumber(String contactnumber) {
+        this.contactnumber = contactnumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

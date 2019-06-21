@@ -19,8 +19,8 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 
 public interface UserAPI {
-    @POST("users/signup")
-    Call<Void> addHeroes(@Body Users users);
+    @POST("/api/register")
+    Call<Void> registerUsers(@Body Users users);
 
     @FormUrlEncoded
     @POST("items")

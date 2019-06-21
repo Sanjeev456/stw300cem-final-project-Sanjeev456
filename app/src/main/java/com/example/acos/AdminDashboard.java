@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class AdminDashboard extends AppCompatActivity {
 
-    private Button btnadditem,btnupdateitem,btndeleteitem,btnorderlist,btnviewitem;
+    private Button btnadditem,btnorderlist,btnviewitem;
 
 
     @Override
@@ -16,10 +16,7 @@ public class AdminDashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_dashboard);
         btnadditem=findViewById(R.id.btnadditem);
-        btnupdateitem=findViewById(R.id.btnupdateitem);
-        btndeleteitem=findViewById(R.id.btndeleteitem);
         btnorderlist=findViewById(R.id.btnorderlist);
-        btnviewitem=findViewById(R.id.btnviewitem);
 
         btnadditem.setOnClickListener(new View.OnClickListener() {
             @Override
