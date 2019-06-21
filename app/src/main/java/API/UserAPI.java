@@ -26,8 +26,7 @@ public interface UserAPI {
     @POST("items")
     Call<Void> addItems(@FieldMap Map<String, String> map);
 
-    @FormUrlEncoded
-    @POST("users/login")
+    @POST("api/users")
     Call<LoginSignupResponse> checkUser(@Field("username") String username, @Field("password") String password);
 
     @Multipart
