@@ -19,14 +19,15 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 
 public interface UserAPI {
-    @POST("/api/register")
+    @POST("api/register")
     Call<Void> registerUsers(@Body Users users);
 
     @FormUrlEncoded
     @POST("items")
     Call<Void> addItems(@FieldMap Map<String, String> map);
 
-    @POST("api/users")
+    @FormUrlEncoded
+    @POST("users/login")
     Call<LoginSignupResponse> checkUser(@Field("username") String username, @Field("password") String password);
 
     @Multipart
